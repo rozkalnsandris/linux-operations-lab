@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "default_mode": "FAST-LANE v2.2",
+  "github_api_access_contract": ".github/github-api-access-v1.json",
+  "commands": {
+    "START": "minimum-sufficient GitHub refresh for one current lane",
+    "SYNC": "incremental refresh of mutable GitHub state",
+    "turpini": "same-scope safe continuation"
+  },
+  "authority": {
+    "merge_requires_explicit_owner_authorization": true,
+    "merge_never_implies_live": true,
+    "live_runtime_requires_separate_authorization": true
+  }
+}
