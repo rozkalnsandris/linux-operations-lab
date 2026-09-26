@@ -9,7 +9,7 @@ startup = json.loads((ROOT / ".github/start-github-only.json").read_text())
 assert manifest["shared_contract"]["repository"] == "rozkalnsandris/ops-workflows"
 assert manifest["shared_contract"]["revision"] == "3bb0740b5f0a8ce631d2ff79f1acc4999ff6ed2c"
 assert startup["github_api_access_contract"] == ".github/github-api-access-v1.json"
-assert startup["default_mode"] == "FAST-LANE v2.2"
+assert startup["default_mode"] == "FAST-LANE v2.3"
 
 reads = manifest["read_policy"]
 assert reads["authenticated_preferred"] is True
