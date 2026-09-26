@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
-  "default_mode": "FAST-LANE v2.2",
+  "default_mode": "FAST-LANE v2.3",
   "github_api_access_contract": ".github/github-api-access-v1.json",
+  "bootstrap_manifest": ".github/agent-bootstrap.json",
   "commands": {
-    "START": "minimum-sufficient GitHub refresh for one current lane",
+    "START": "minimum-sufficient GitHub refresh for one current lane, then continue safe same-scope source work automatically when unblocked",
     "SYNC": "incremental refresh of mutable GitHub state",
     "turpini": "same-scope safe continuation"
+  },
+  "response": {
+    "compact_terminal_response": true,
+    "single_selected_current_lane_per_start": true
   },
   "authority": {
     "merge_requires_explicit_owner_authorization": true,
