@@ -64,4 +64,5 @@ Shared governance contract: `rozkalnsandris/ops-workflows/docs/AGENT_WORK_CYCLE_
 - MERGE remains explicit unless a separately activated local FULL mode validly grants issue-scoped merge authority. Merge never implies LIVE.
 - LIVE/deploy/runtime/credential/permission/production-data mutation requires the exact repository-local authorization that applies to that class/target.
 - After the first authorized mutation begins, error, timeout, drift, ambiguity or authorization uncertainty is fail-closed: collect only necessary read-only evidence and STOP unless recovery was explicitly pre-authorized.
+- Every user-visible terminal work-cycle response must end with exactly one final operator command. That command — including `ACTION REQUIRED` authorization, `NEXT COMMAND`, `MERGE`, `AUTHORIZE`, `START`, `SYNC`, `turpini`, or any equivalent exact owner command — must be the sole content of its own fenced `text` code block. Never emit the final command as prose, inline code, a list item, a quote, or unfenced/plain text.
 <!-- END AGENT-WORK-CYCLE-V1-MANAGED -->
